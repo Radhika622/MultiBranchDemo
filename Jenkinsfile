@@ -1,6 +1,11 @@
 pipeline { 
   
-   agent any
+     tools{
+        maven 'mymaven'
+    }
+    agent {
+        label 'JenkinAgent1'
+    }
 
    stages {
    
